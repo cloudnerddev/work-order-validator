@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: work-order-validator
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: ADMIN_API_KEY
+        generateValue: true # Render will auto-generate a secure API key
